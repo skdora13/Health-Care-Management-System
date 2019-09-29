@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+body{
+    background: #3f4c6b;
+    font-family: Arial, sans-serif;
+}
+
+.header{
+	  width:80vw;
+	  height:6vh;
+	
+	  margin-top:-57px;
+   background-color: #000080;
+   border:2px solid #fff;
+   box-shadow:5px 6px -8px #ccc;
+    font-family: Arial, sans-serif;
+}
+.cbody{
+	  width:80vw;
+	  
+	  margin-top:0;
+    font-family: Arial, sans-serif;
+}
+#container {
+    width: 70vw;
+    overflow: hidden;
+    margin: 40px auto;	
+}
+.con1{
+	height:auto;
+padding:10px;
+  background-color: #fff;
+}
+input[type="text"]
+{
+	width:17vw;
+	height:1vh;
+padding:1vh;
+margin-bottom:5px;
+}
+.tp{
+	height:30vh;
+	width:80vw;
+	background-image:url(dp.jpg);
+}
+a{
+	text-decoration:none;
+	color:white;
+	padding:5px;
+}
+.con2{
+	height:30vh;
+	display:flex;
+  background-color: #ffa500;
+}
+.con2 ul{
+	height:30vh;
+	margin-left:12em;
+	margin-top:3em;
+}
+.con2 li{
+	height:20px;
+	padding:4px;
+	text-align:center;
+	list-style:none;
+	text-decoration:none;
+	
+}
+li a{
+	color:white;
+	font-weight:7px;
+}
+h1 {
+    color:white;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.tet {
+    color:black;
+    text-align: center;
+    margin-bottom: 10px;
+	
+}
+p{
+	width:47vw;
+	color:#585206;
+	font-family:'Helvetica Neue',sans-serif;
+	font-size:14px;
+	align-items:center;
+	line-height:24px;
+	margin:0 0 24px;
+	text-align:justify;
+	text-justify:center;
+	
+}
+.thumbs {
+    display: flex;
+	z-index:999;
+	position:relative;
+	top:-3.5em;
+	   width: 70vw;
+
+	   background-color:rgba(0,0,0,0.4);
+    justify-content: center;
+}
+
+.thumbs li,
+.thumbs li a {
+    width: 98px;
+    height: 55px;
+}
+
+.thumbs a {
+    /*display: block;*/
+    position: relative;
+    font: bold 12px/25px Arial, sans-serif;
+    color: #515151;
+    text-decoration: none;
+    text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.25), inset 1px 1px 0px rgba(0, 0, 0, 0.15);
+}
+
+.thumbs li a img {
+    width: 90px;
+    height: 45px;
+    border: 4px solid #3498DB;
+}
+
+.thumbs li a:hover span {
+    position: absolute;
+    z-index: 101;
+    bottom: 30px;
+    display: block;
+    width: 98px;
+    height: 25px;
+    text-align: center;
+    border-radius: 3px;
+
+    -webkit-box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.4);
+    -o-box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.4);
+    -ms-box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.4);
+
+    background: #fff;
+    background: -webkit-linear-gradient(top, #fff 0%,  #bcbcbc 100%);
+    background: -moz-linear-gradient(top, #fff 0%,  #bcbcbc 100%);
+    background: -o-linear-gradient(top, #fff 0%,  #bcbcbc 100%);
+    background: -ms-linear-gradient(top, #fff 0%,  #bcbcbc 100%);
+    background: linear-gradient(top, #fff 0%,  #bcbcbc 100%);
+}
+
+.thumbs li a:hover span::before {
+    width: 0;
+    height: 0;
+    border-bottom: 5px solid white;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: 44px;
+
+}
+
+.slide {
+
+    overflow: hidden;
+    /*border: 4px solid #E74C3C;*/
+    border: 4px solid #3498DB;
+	  
+}
+
+.slide,
+.slide li,
+.slide img {
+    width: 70vw;
+    height: 350px;
+    position: relative;
+}
+
+.slide li {
+    position: absolute;
+    z-index: 50;
+}
+
+/*Animation For Slider*/
+@-webkit-keyframes slider {
+    0% {left: -1000px;}
+    100% {left: 0;}
+}
+
+.slide li:target {
+    z-index: 100;
+    -webkit-animation: slider 1s 1;
+}
+
+/*Not Target*/
+@-webkit-keyframes noTarget {
+    0% {z-index: 75;}
+    100% {z-index: 75;}
+}
+
+.slide li:not(:target) {
+    -webkit-animation: noTarget 1s 1;
+}
+.a li{    
+padding:1em;
+border:1px solid green;
+background:red;
+color:white;
+width:22em;
+    margin:1em;
+    text-align:center;
+        box-shadow:5px 6px -8px green;
+        border-radius:1em 1em 1em 1em;
+
+}
+.b{
+    height:50vh;
+    width:30vw;
+    background-image:url(a.jpg);
+    position:relative;
+    top:-42vh;
+    left:34vw;
+}
